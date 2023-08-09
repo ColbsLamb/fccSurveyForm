@@ -1,0 +1,62 @@
+h1 {font-family: Verdana; text-align: center; font-size: 40px; margin-top: 0; margin-bottom: 15px; padding: 20px;
+    text-shadow: white 0  0.4em 0.9em; 
+    border-style: 0;
+    background-color: #1b3045;
+    background-position: bottom;
+    object-fit: cover;
+    }
+    
+    p {
+      text-align: center;
+    }
+    
+    h3 {font-family: Verdana; text-align: center; font-size: 20px; margin-top: 0; margin-bottom: 3px; padding: 5px; 
+    border-style: none;
+    background-color: #1b3045;}
+    
+    header #title {color: #1b3045; -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fbb32b;}
+    
+    fieldset {
+      border: 0px solid #1b3045
+    }
+    
+    body { background-color: #5dade2; 
+      font-family: verdana; 
+      color: white; 
+      letter-spacing: normal; margin-left: auto; margin-right: auto; padding: 20px; 
+    }
+    
+    label  { margin-right: 10; }
+    input {margin-right: auto; }
+    survey-form { width: 80%;}
+    .name, .email, .number, .dropdown, .text, .submit {padding: 5px; }
+    
+    .park, .water-park, .budget {padding: 10px}
+    
+    .priorities label{
+      justify-content: left;
+      display: inline-block;
+      padding: 10px;
+    }
+
+    .footer {
+        font-family: verdana;
+        font-size: 10;
+        text-decoration: none;
+    }
+    
+    hr.new5 {
+      border: 1px solid #1b3045;
+      border-radius: 5px;
+    }
+    
+    textarea {
+      width: 600px;
+      height: 50px;
+      font-family: verdana;
+    }
+    
+    input#number {
+      width: 120px;
+    }

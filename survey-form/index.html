@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Colby FCC Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+
+        <h1 id="title"
+            style="background-image: url(./assets/castle.jpg);">
+            Disney Vacation Planner Survey</h1>
+
+        <p id="description">Need help in planning your Walt Disney World Trip? Please complete the following form to
+            help us better understand your needs and goals for your family's magical experience.</p>
+    </header>
+
+    <fieldset>
+        <form id="survey-form">
+            <div name="survey-form">
+
+                <h3 class="title">Personal Information</h3>
+                <div class="name">
+                    <label id="name-label">Name</label>
+                    <input type="text" required id="name" placeholder="Mickey Mouse"></input>
+                </div>
+
+                <div class="email">
+                    <label id="email-label">Email</label>
+                    <input type="email" id="email" required placeholder="magic@wdw.com">
+                </div>
+
+                <div class="number">
+                    <label id="number-label">Phone Number</label><input type="number" required id="number" min="10"
+                        max="10" placeholder="555-347-6399"></input>
+                </div>
+
+                <div class="dropdown">
+                    <label for="family">How many are in your traveling group?</label>
+                    <select name="family" id="dropdown">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                    </select>
+                </div>
+
+                <div class="dropdown">
+                    <label for="toddler">How many in your traveling group are ages 0-2?</label>
+                    <select name="toddler" id="dropdown">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                    </select>
+                </div>
+
+                <div class="dropdown">
+                    <label for="children">How many in your traveling group are ages 3-9?</label>
+                    <select name="children" id="dropdown">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                    </select>
+                </div>
+
+                <div class="budget">
+                    <label id="budget">What is your estimated budget?</label><input type="text" name="currency-field"
+                        id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency"
+                        placeholder="$1,500.00">
+                </div>
+
+                <hr class="new5">
+                </hr>
+
+                <h3 class="title">Hotel and Tickets</h3>
+
+                <div class="dropdown">
+                    <label for="hotel-type">Select hotel type:</label>
+                    <select name="hotel-type" id="dropdown">
+                        <option value="deluxe">Deluxe $$$</option>
+                        <option value="moderate">Moderate $$</option>
+                        <option value="value">Value $</option>
+                        <option value="off-property">Off Property</option>
+                    </select>
+                </div>
+
+                <div class="park">
+                    <label>What type of ticket would you like?</label>
+                    <lb></lb>
+                    <input type="radio" id="1Park" name="park-pref" value="1Park">
+                    <label for="1Park">1 Park per Day</label>
+                    <input type="radio" id="ParkHop" name="park-pref" value="ParkHop">
+                    <label for="ParkHop">Park Hopper</label>
+                </div>
+
+
+                <div class="water-park">
+                    <label>Do you want a day at a Disney waterpark?</label>
+                    <lb></lb>
+                    <input type="radio" id="wp-yes" name="water-park" value="wp-yes">
+                    <label for="wp-yes">Yes</label>
+                    <input type="radio" id="wp-no" name="water-park" value="ParkHop">
+                    <label for="wp-yes">No</label>
+                </div>
+
+                <div class="dropdown">
+                    <label for="ticket-days">Number of total park days?</label>
+                    <select name="ticket-days" id="dropdown">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+
+                <hr class="new5">
+                </hr>
+
+                <h3 class="title">Preferences</h3>
+
+                <div class="priorities">
+                    <label name="trip-priorities" id="priorities">Please select your top priorities/needs for your
+                        trip:</label>
+
+                    <label for="pool" style="word-wrap:break-word">
+                        <input type="checkbox" class="check" value="pool" id="pool"> Fun Pool Atmosphere</input></label>
+
+                    <label for="epcot" style="word-wrap:break-word"><input type="checkbox" class="check" id="epcot"
+                            value="proximity-epcot"> Close to Epcot</input></label>
+
+                    <label for="MK" style="word-wrap:break-word"><input type="checkbox" class="check" id="MK"
+                            value="proximity-MK"> Close to Magic Kingdom</input></label>
+
+                    <label for="HS" style="word-wrap:break-word">
+                        <input id="HS" type="checkbox" class="check" value="proximity-HS"> Close to Hollywood
+                        Studios</input>
+                    </label>
+
+                    <label for="AK" style="word-wrap:break-word">
+                        <input type="checkbox" class="check" value="proximity-AK" id="AK"> Close to Animal
+                        Kingdom</input></label>
+
+                    <label for="DS" style="word-wrap:break-word">
+                        <input type="checkbox" class="check" value="proximity-DS" id="DS"> Close to Disney
+                        Springs</input>
+
+                        <label for="dining" style="word-wrap:break-word">
+                            <input type="checkbox" class="check" value="dining" id="dining"> Great Dining
+                            Options</input>
+
+                            <label for="dining" style="word-wrap:break-word">
+                                <input type="checkbox" class="check" value="character" id="character"> Chracter
+                                Dining</input>
+
+                                <label for="dining" style="word-wrap:break-word">
+                                    <input type="checkbox" class="check" value="thrill" id="thrill"> Thrill
+                                    Rides</input>
+                                </label>
+
+                </div>
+
+                <hr class="new5">
+                </hr>
+
+                <div class="text">
+                    <textarea
+                        placeholder="Please provide any additional information to help us create a magical itenerary for your family."></textarea>
+                </div>
+
+                <div class="submit">
+                    <input type="submit" id="submit"></input>
+                </div>
+
+    </fieldset>
+
+    </form>
+
+    <label class="footer">Image by <a
+            href="https://pixabay.com/users/pexels-2286921/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1842324">Pexels</a>
+        from <a
+            href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1842324">Pixabay</a></label>
+</body>
+
+</html>
